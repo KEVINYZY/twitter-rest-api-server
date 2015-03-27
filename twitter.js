@@ -1,7 +1,7 @@
 var Twit   = require('twit'),
     async  = require('async'),
     moment = require('moment'),
-    key = require('key'),
+    key = require('./key.js'),
     T      = new Twit({
       consumer_key: process.env.TwitterConsumerKey || key.consumer_key,
       consumer_secret: process.env.TwitterConsumerSecret || key.consumer_secret,
