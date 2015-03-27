@@ -1,16 +1,6 @@
-[![Gittip Donate Button](http://img.shields.io/gratipay/igorribeirolima.svg)](https://gratipay.com/igorribeirolima/)
+A prototype of twitter restful API server, copied from [@igorlima](https://github.com/igorlima/twitter-rest-api-server).
 
-# JS unit testing using dependency injection
-
-You probably know that to do JavaScript testing is good and some hurdles to overcome is how to test our code in a manner to *(i)* inject mocks for other modules, *(ii)* to leak private variables or *(iii)* override variables within the module.
-
-[rewire](https://github.com/jhnns/rewire) is a tool for helping us on overcoming these hurdles. It provides us an easy way to dependency injection for unit testing and adds a special setter and getter to modules so we can modify their behaviour for better unit testing. What [rewire](https://github.com/jhnns/rewire) does is to not load the file and eval the contents to emulate the load mechanism.
-
-To get started with dependency injection, we'll create [a twitter rest api server](https://gist.github.com/igorlima/b31f1a26a5b100186a98) and do unit tests using mocks and overriding variables within modules. This example will focus on back-end unit testing but if you want to use [rewire](https://github.com/jhnns/rewire) also on the client-side take a look at [client-side bundlers](https://github.com/jhnns/rewire#client-side-bundlers).
-
-## An example
-
-This example is a public HTTP API to retrieve Twitter user timelines. It has basically two files: [server.js](https://gist.github.com/igorlima/b31f1a26a5b100186a98#file-server-js) and [twitter.js](https://gist.github.com/igorlima/b31f1a26a5b100186a98#file-twitter-js).
+This repo is a public HTTP API to retrieve Twitter user timelines. It has basically two files: [server.js](https://gist.github.com/igorlima/b31f1a26a5b100186a98#file-server-js) and [twitter.js](https://gist.github.com/igorlima/b31f1a26a5b100186a98#file-twitter-js).
 
 The first file creates [an basic instance](http://expressjs.com/starter/hello-world.html) of [express](http://expressjs.com) and defines [a route for a GET request method](http://expressjs.com/starter/basic-routing.html), which is ``/twitter/timeline/:user``.
 
